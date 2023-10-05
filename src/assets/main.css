@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+  @apply m-0 p-0;
+}
+.wrapper{
+  @apply min-w-[320px] max-w-[1920px] px-[auto] overflow-x-hidden;
+}
+header{
+  @apply w-[1400px] mx-[auto] pt-[30px] bg-black/70 w-full h-screen flex flex-col justify-center items-center;
+}
+@layer header{
+  @import url("../assets/DrukCyr-Medium/style.css");
+  .up_menu{
+    @apply w-[1400px] px-[auto] flex justify-around items-center;
+  }
+  .nav{
+    @apply text-white/50 w-[608px];
+  }
+  .nav ul{
+    @apply flex w-full justify-between;
+  }
+  .header_video{
+    @apply absolute left-0 bottom-0 z-[-1];
+  }
+  .contact_us{
+    @apply flex justify-around w-[208px];
+  }
+ @layer contact_us{
+  .language{
+    @apply mx-[15px] h-[17px] w-[35px] ;
+  }
+  .number{
+    @apply mx-[15px]; 
+  }
+  .text_info{
+    @apply h-[80vh] text-white flex flex-col justify-center items-center text-center;
+  }
+  @layer text_info{
+    .text_info h2{
+      @apply  mt-[250px];
+    }
+ } 
+}
+}
+/*средняя часть*/
+main{
+  @apply bg-black w-full pt-[150px];
+}
+@layer main{
+.company_work{
+  @apply w-[1400] flex flex-col justify-center items-center mb-[123px]; 
+}
+.our_client{
+  @apply flex flex-col justify-center items-center;
+}
+}
