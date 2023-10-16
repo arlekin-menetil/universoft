@@ -1,9 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-  @apply m-0 p-0;
-}
+
 .wrapper{
   @apply min-w-[320px] max-w-[1920px] px-[auto] overflow-x-hidden;
 }
@@ -22,7 +20,7 @@ header{
     @apply flex w-full justify-between;
   }
   .header_video{
-    @apply absolute left-0 bottom-0 z-[-1];
+    @apply w-full h-screen absolute left-0 top-0 z-[-1] object-cover;
   }
   .contact_us{
     @apply flex justify-around w-[208px];
@@ -31,9 +29,6 @@ header{
   .language{
     @apply mx-[15px] h-[17px] w-[35px] ;
   }
-  .number{
-    @apply mx-[15px]; 
-  }
   .text_info{
     @apply h-[80vh] text-white flex flex-col justify-center items-center text-center;
   }
@@ -41,18 +36,126 @@ header{
     .text_info h2{
       @apply  mt-[250px];
     }
+    .text_info a{
+      @apply mt-[45px] py-[26px] px-[40px] rounded-3xl;
+    }
  } 
 }
 }
 /*средняя часть*/
 main{
-  @apply bg-black w-full pt-[150px];
+  @apply w-[1400px] bg-black w-full pt-[150px] px-[auto] overflow-x-hidden;
 }
 @layer main{
 .company_work{
-  @apply w-[1400] flex flex-col justify-center items-center mb-[123px]; 
+  @apply w-full flex flex-col justify-center items-center mb-[123px]; 
 }
 .our_client{
-  @apply flex flex-col justify-center items-center;
+  @apply  w-full flex flex-col justify-center items-center w-full mb-[250px] px-[auto];
 }
+@layer our_client{
+  .our_client img{
+    @apply mb-[70px];
+  }
+}
+/*company*/
+.company{
+  @apply w-full px-[auto] flex flex-col justify-center items-center;
+}
+@layer company{
+  .earth{
+    @apply w-[140px] h-[140px];
+  }
+  .about_company{
+    @apply mt-[45px] flex flex-col justify-center items-center text-center text-white;
+  }
+  @layer about_company{
+   .about_company img{
+    @apply my-[45px];
+   }
+   .about_company p{
+    @apply mb-[20px];
+   }
+      }
+  }
+  .infiniti_earth{
+    @apply w-full;
+  }
+  @layer infiniti_earth{
+.video_earth{
+  @apply w-[2800px] h-[1700px] ml-[-750px] object-cover; 
+}
+  }
+  .service{
+    @apply mt-[-950px] w-full flex flex-wrap justify-between items-center;
+  }
+  @layer service{
+    .serve{
+      @apply bg-black w-[446px] h-[550px] flex flex-col justify-center items-center text-white/50 text-center;
+    }
+    .serve video{
+      @apply w-[272px] h-[272px];
+    }
+  }
+  .atom{
+    @apply w-full bg-black flex flex-col justify-center items-center text-white/50 text-center;
+  }
+  @layer atom{
+    .atom video{
+      @apply w-[140px] h-[140px] mt-[100px] mb-[46px];
+    }
+    .servises{
+      @apply bg-black w-full flex flex-wrap justify-between items-center;
+    }
+  }
+  .line{
+    @apply w-full mx-[auto] flex justify-center items-center mb-[100px];
+  }
+  .universoft_portfolio{
+    @apply w-full flex mt-[57px] mb-[159px];
+  }
+  .message{
+    @apply w-full bg-black flex flex-col justify-center items-center text-white/50 text-center;
+  }
+  @layer message{
+    .message video{
+      @apply w-[140px] h-[140px] mb-[46px];
+    }
+  }
+
+  .univework{
+    @apply mt-[115px] flex justify-between text-center text-white/50 items-start;
+  }
+  .univework a{
+    @apply py-[23px] px-[53px] rounded-3xl;
+  }
+  @layer univework{
+    .uzgard{
+      @apply w-[453px] h-[560px] flex flex-col items-center justify-start;
+    }
+    @layer uzgard{
+      .uzgard img{
+        @apply w-[260px] h-[50px];
+      }
+    }
+    .siema{
+      @apply w-[453px] h-[560px] flex flex-col items-center justify-start;
+    }
+    @layer siema{
+      .siema img{
+        @apply w-[166px] h-[86px];
+      }
+    }
+    .dc{
+      @apply w-[453px] h-[560px] flex flex-col items-center justify-start;
+    }
+    @layer dc{
+      .dc img{
+        @apply w-[158px] h-[82px];
+      }
+    }
+  }
+  .logo_company{
+    @apply mb-[60px];
+  }
 }
