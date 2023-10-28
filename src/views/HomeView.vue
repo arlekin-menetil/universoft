@@ -97,6 +97,7 @@ const RouterArr = ref([
     <p>Universoft-IT является ведущей компанией в области информационных технологий, <br> специализирующейся на разработке инновационного программного обеспечения </p>
   </div>
   <div class="servises">
+    <div class="servis">
   <div class="serve">
     <video muted loop autoplay plays-inline>
       <source src="../../public/gallary/video/Sait.webm">
@@ -118,6 +119,8 @@ const RouterArr = ref([
     <img src="../../public/gallary/servise/РазработкаAI.svg" alt="">
     <p>Качественный сайт – это основа продвижения <br> Вашего бизнеса в интернете.</p>
   </div>
+</div>
+<div class="servis">
   <div class="serve">
     <video muted loop autoplay plays-inline>
       <source src="../../public/gallary/video/SEO.webm">
@@ -139,6 +142,7 @@ const RouterArr = ref([
     <img src="../../public/gallary/servise/Mobileapps.svg" alt="">
     <p>Мобильные приложения – необходимость для <br> оперативной реакции на изменения в любых сферах <br>
       и получения своевременной информации</p>
+  </div>
   </div>
 </div>
 </div>
@@ -195,20 +199,76 @@ const RouterArr = ref([
   </div>
 </div>
   </main>
+  <footer>
+    <div class="footer_menu">
+      <div>
+      <div class="footer_category">
+        <img src="../../public/gallary/druk_text/О_компании.svg" alt="">
+      </div>
+      <div>
+        <p>Universoft-IT является ведущей компанией в области <br> 
+          информационных технологий, специализирующейся<br>
+           на разработке инновационного программного<br>
+            обеспечения и предоставлении широкого спектра<br>
+             услуг IT-консалтинга.</p>
+      </div>
+      <div class="footer_icons">
+        <a href="#"><img src="../../public/gallary/icons/youtube.png" alt=""></a>
+        <a href="#"><img src="../../public/gallary/icons/telegramm.png" alt=""></a>
+        <a href="#"><img src="../../public/gallary/icons/instagramm.png" alt=""></a>
+      </div>
+    </div>
+      <div class="footer_category">
+        <img src="../../public/gallary/druk_text/Услуги.svg" alt="">
+        <ul>
+          <li><a href="">Разработка сайтов</a></li>
+          <li><a href="">Реклама в СМИ</a></li>
+          <li><a href="">Разработка брендбуков</a></li>
+          <li><a href="">Seo продвижение</a></li>
+        </ul>
+      </div>
+      <div class="footer_category">        
+        <img src="../../public/gallary/druk_text/Полезные_ссылки.svg" alt="">
+        <ul>
+          <li><a href="">Разработка сайтов</a></li>
+          <li><a href="">Реклама в СМИ</a></li>
+          <li><a href="">Разработка брендбуков</a></li>
+          <li><a href="">Seo продвижение</a></li>
+        </ul>
+      </div>
+      <div class="footer_category">
+        <img src="../../public/gallary/druk_text/Контактные_данные.svg" alt="">
+        <ul>
+          <li>г.Ташкент, ул.Тараса Щевченько 22,</li>
+          <li><a href="">info@universoft.uz</a></li>
+          <li><a href="tel:+998998999191">+998  99  899 91 91</a></li>
+          <li>Пн. - Сб. 9:00 до 19:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer_copyright">
+      <img src="../../public/gallary/line/Line.svg" alt="">
+      <p>Копирование материалов сайта разрешается с ссылкой на сайт. <br>
+        В противном случае копирование преследуется по закону</p>
+    </div>
+  </footer>
 </div>
 </template>
 
 <style>
+.number{
+  border-radius: 15px 15px 15px 15px;
+}
 .text_info a{
   color: #82F7FF;
   box-shadow: -2px 1px 15px 2px #82F7FF inset;
-};
+}
 .atom{
 box-shadow: -6px -41px 100px 57px rgba(34, 60, 80, 0.6);
-};
+}
 .univework a{
   color: #82F7FF;
   box-shadow: -2px 1px 15px 2px #82F7FF inset;
-};
+}
 @import url("../assets/main.css");
 </style>
