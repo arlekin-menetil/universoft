@@ -7,7 +7,7 @@ const RouterArr = ref([
   },
   {
     name: 'Услуги',
-    to: ''
+    to: '/Services'
   },
   {
     name: 'Портфолио',
@@ -15,7 +15,7 @@ const RouterArr = ref([
   },
   {
     name: 'Наши партнеры',
-    to: ''
+    to: '/our_partners'
   },
   {
     name: 'Вакансии',
@@ -120,30 +120,6 @@ const RouterArr = ref([
     <p>Качественный сайт – это основа продвижения <br> Вашего бизнеса в интернете.</p>
   </div>
 </div>
-<div class="servis">
-  <div class="serve">
-    <video muted loop autoplay plays-inline>
-      <source src="../../public/gallary/video/SEO.webm">
-    </video>
-    <img src="../../public/gallary/servise/Seoпродвижение.svg" alt="">
-    <p>Продвижение сайта в топ 10 Яндекса и Google <br> - будущие клиенты саAми найдут вас</p>
-  </div>
-  <div class="serve">
-    <video muted loop autoplay plays-inline>
-      <source src="../../public/gallary/video/AI.webm">
-    </video>
-     <img src="../../public/gallary/servise/CRM.svg" alt="">
-     <p>CRM- и ERP-системы предназначены для <br> автоматизации и управления внутренними <br> рабочими процессами компании.</p>
-  </div>
-  <div class="serve">
-    <video muted loop autoplay plays-inline>
-      <source src="../../public/gallary/video/Sait.webm">
-    </video>
-    <img src="../../public/gallary/servise/Mobileapps.svg" alt="">
-    <p>Мобильные приложения – необходимость для <br> оперативной реакции на изменения в любых сферах <br>
-      и получения своевременной информации</p>
-  </div>
-  </div>
 </div>
 </div>
 <div class="line">
@@ -256,8 +232,20 @@ const RouterArr = ref([
 </template>
 
 <style>
+.serve{
+  border: 1px solid #82F7FF;
+}
+.serve div:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% + 4px);
+  height: 100%;
+  background: #fff;
+}
 .number{
-  border-radius: 15px 15px 15px 15px;
+  border-radius: 15px 15px 15px;
 }
 .text_info a{
   color: #82F7FF;

@@ -108,7 +108,7 @@ main{
       @apply flex justify-center mx-auto;
     }
     .serve{
-      @apply bg-black w-[446px] h-[550px] flex flex-col justify-center items-center text-white/50 text-center;
+      @apply bg-black w-[446px] h-[550px] ml-[30px] mb-[52px] flex flex-col justify-center items-center text-white/50 text-center;
     }
     .serve video{
       @apply w-[272px] h-[272px];
@@ -221,4 +221,29 @@ footer{
     @apply mb-[20px];
   }
 }
+}
+
+
+
+
+/*Наши партнеры*/
+.box{
+  @apply w-full h-screen flex justify-center items-center;
+}
+.text_partners{
+  @apply flex flex-col justify-center text-center items-center;
+}
+@layer text_partners{
+  .info_partners{
+    @apply flex flex-col justify-center items-center;
+  }
+  .bg{
+    @apply flex  flex-col justify-center items-center;
+  }
+  .bg img{
+    @apply w-[822px] mt-[77px];
+  }
+  .line_bg {
+    @apply absolute bottom-[3px];
+  }
 }
