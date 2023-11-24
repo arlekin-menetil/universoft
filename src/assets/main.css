@@ -3,24 +3,24 @@
 @tailwind utilities;
 
 .wrapper{
-  @apply min-w-[320px] max-w-[1920px] px-[auto] overflow-x-hidden;
+  @apply  w-full px-[auto] overflow-x-hidden;
 }
 header{
-  @apply w-[1400px] mx-[auto] pt-[30px] bg-black/70 w-full h-screen flex flex-col justify-center items-center;
+  @apply w-full mx-[auto] pt-[30px] bg-black/70 w-full h-screen flex flex-col justify-center items-center px-0 sm:px-12 md:px-1 lg:px-12 xl:px-12;
 }
 @layer header{
   @import url("../assets/DrukCyr-Medium/style.css");
   .up_menu{
-    @apply w-[1400px] px-[auto] flex justify-around items-center;
+    @apply w-full px-[auto] flex items-center ;
   }
   .nav{
-    @apply text-white/50 w-[608px];
+    @apply text-white/50 w-[608px] ;
   }
   .nav ul{
     @apply flex w-full justify-between;
   }
   .header_video{
-    @apply w-full h-screen absolute left-0 top-0 z-[-1] object-cover;
+    @apply w-full bg-local h-screen absolute left-0 top-0 z-[-1] object-cover;
   }
   .contact_us{
     @apply flex justify-around w-[270px] items-center;
@@ -97,7 +97,7 @@ main{
   @apply w-[3200px] h-[1700px] ml-[-600px] object-cover; 
 }
 .servises{
-  @apply bg-black flex;
+  @apply bg-black flex ;
 }
   }
   .service{
@@ -105,13 +105,16 @@ main{
   }
   @layer service{
     .servis{
-      @apply flex justify-center mx-auto;
+      @apply flex flex-wrap justify-center mx-auto mt-10 ;
     }
     .serve{
-      @apply bg-black w-[446px] h-[550px] ml-[30px] mb-[52px] flex flex-col justify-center items-center text-white/50 text-center;
+      @apply bg-black w-[246px]  pl-5 pr-5 h-fit sm:h-[400px] md:h-[450px] md:pb-2 lg:h-[600px] sm:w-[50%]  md:w-[30%] ml-[30px] mb-[52px] flex flex-col justify-center items-center text-white/50 text-center;
     }
     .serve video{
-      @apply w-[272px] h-[272px];
+      @apply w-[272px] h-[272px] sm:w-[50%]  md:w-[90%] sm:h-[50%]  md:h-[30%];
+    }
+    .serve p{
+      @apply sm:pb-16 sm:px-2 md:pb-2 lg:pb-3
     }
   }
   .atom{
@@ -129,7 +132,14 @@ main{
     @apply w-full mx-[auto] flex justify-center items-center mb-[100px];
   }
   .universoft_portfolio{
-    @apply w-full flex mt-[57px] mb-[159px];
+    @apply w-full h-fit flex flex-wrap mt-[57px] mb-[159px];
+  }
+  .portfolio{
+    @apply h-full sm:w-[100vw] md:w-[25%] 
+  }
+  
+  .portfolio > a > img {
+    @apply w-full
   }
   .message{
     @apply w-full bg-black flex flex-col justify-center items-center text-white/50 text-center;
@@ -141,14 +151,14 @@ main{
   }
 
   .univework{
-    @apply mt-[115px] flex justify-center text-center text-white/50 items-start;
+    @apply mt-[115px] flex flex-wrap justify-center text-center text-white/50 items-start;
   }
   .univework a{
     @apply py-[23px] px-[53px] rounded-3xl;
   }
   @layer univework{
     .uzgard{
-      @apply w-[453px] h-[560px] flex flex-col items-center justify-start;
+      @apply w-[453px] h-[560px] my-4 flex flex-col items-center justify-start;
     }
     @layer uzgard{
       .uzgard img{
@@ -193,11 +203,11 @@ main{
 
 /*подвал*/
 footer{
-  @apply bg-black text-white/50 w-full; 
+  @apply bg-black text-white/50 w-full px-5; 
 }
 @layer footer{
   .footer_menu{
-    @apply flex justify-around mb-[38px];
+    @apply flex flex-col sm:flex-row md:justify-around lg:justify-around xl:justify-around mb-[38px];
   }
   .footer_icons{
     @apply mt-[52px]  flex w-[160px] justify-between;
@@ -207,8 +217,11 @@ footer{
 @apply w-[40px] h-[40px];
   }
 }
+.footer_category{
+  @apply sm:mx-2
+}
 .footer_category img{
-@apply mb-[28px];
+@apply my-[28px];
 }
 .footer_category li{
   @apply my-[13px];
